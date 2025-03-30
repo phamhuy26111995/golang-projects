@@ -96,3 +96,9 @@ func GetEventById(id int64) (*Event, error) {
 	return &event, nil
 
 }
+
+func DeleteEvent(id int64) error {
+	query := `DELETE FROM events WHERE id = ?`
+	_, err := database.DB.Exec(query, id)
+	return err
+}
