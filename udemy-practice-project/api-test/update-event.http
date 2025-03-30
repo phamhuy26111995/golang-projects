@@ -1,0 +1,10 @@
+PUT http://localhost:8080/events/1
+Content-Type: application/json
+
+{
+    "ID" : 1,
+    "name" : "Sự kiên updated",
+    "description" : "Sự kiên updated",
+    "location" : "Sự kiên updated",
+    "dateTime" : "2025-03-28T16:30:00.000Z" 
+}
